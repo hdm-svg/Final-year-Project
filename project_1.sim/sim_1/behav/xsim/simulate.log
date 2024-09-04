@@ -1,0 +1,40 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Start
+Test case           1
+Key: 	00a14b66b34c7101e798a43505a17d58
+Nonce: 	33b1ba07991290964c7d834e82a9e9b7
+Associated: 	4153434f4e
+Plaintext: 	6173636f6e
+Done encryption in           2 clock cycles
+Ciphertext:	zzzzzzzzzz
+Tag:	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Done decryption in           2 clock cycles
+PT: 	0000000000
+Tag: 	0000000000000000000000002ef5cd71
+Authenticated: 	1
+Test case           2
+Key: 	3ffa75efbd1705fa8f9ced62e5bb0be3
+Nonce: 	9691163337dd55217ea2a6b21eaa19b2
+Associated: 	4153434f4e
+Plaintext: 	6173636f6e
+Done encryption in           2 clock cycles
+Ciphertext:	zzzzzzzzzz
+Tag:	ffffffffffffffffffffffffffffffff
+Done decryption in           2 clock cycles
+PT: 	0000000000
+Tag: 	00000000000000000000000000000000
+Authenticated: 	1
+Test case           3
+Key: 	b7234a4db9fb8b7c2aa5735ebef1180c
+Nonce: 	8ebb295da81c74b58306d4e8362e2242
+Associated: 	4153434f4e
+Plaintext: 	6173636f6e
+Done encryption in           2 clock cycles
+Ciphertext:	zzzzzzzzzz
+Tag:	ffffffffffffffffffffffffffffffff
+Done decryption in           2 clock cycles
+PT: 	0000000000
+Tag: 	00000000000000000000000000000000
+Authenticated: 	1
+$finish called at time : 47060 ns : File "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec_new.v" Line 197

@@ -1,0 +1,24 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/vitis2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 075b5aeebf98400ba9afa53b93637af7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_endec_behav xil_defaultlib.tb_endec xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 1 for port 'tag_in' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add_const
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.substituition_default
+Compiling module xil_defaultlib.linear_diffuse
+Compiling module xil_defaultlib.permutation
+Compiling module xil_defaultlib.round_ctr
+Compiling module xil_defaultlib.encryption(A_l=112,Pt_l=128)
+Compiling module xil_defaultlib.decryption(A_l=112,Ct_l=128)
+Compiling module xil_defaultlib.processing(RATE=64,A_l=112,text_...
+Compiling module xil_defaultlib.ascon(A_l=112,text_l=128)
+Compiling module xil_defaultlib.tb_endec
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_endec_behav
