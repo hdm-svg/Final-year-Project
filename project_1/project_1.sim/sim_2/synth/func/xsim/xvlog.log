@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.sim/sim_2/synth/func/xsim/tb_endec_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_const
+INFO: [VRFC 10-311] analyzing module add_const_2
+INFO: [VRFC 10-311] analyzing module ascon
+INFO: [VRFC 10-311] analyzing module decryption
+INFO: [VRFC 10-311] analyzing module encryption
+INFO: [VRFC 10-311] analyzing module linear_diffuse
+INFO: [VRFC 10-311] analyzing module permutation
+INFO: [VRFC 10-311] analyzing module permutation_0
+INFO: [VRFC 10-311] analyzing module processing
+INFO: [VRFC 10-311] analyzing module round_ctr
+INFO: [VRFC 10-311] analyzing module round_ctr_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_endec

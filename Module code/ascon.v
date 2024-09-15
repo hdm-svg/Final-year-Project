@@ -41,6 +41,9 @@ module ascon #(
 	wire [127:0] dec_tag_reg;
 	wire ready; //ping to check on
 	wire en_start;
+	
+	wire en_ready;
+	wire de_ready;
 
 
 	
@@ -51,6 +54,7 @@ module ascon #(
 			nonce <= 0;
 			associated <= 0;
 			plaintext <= 0;
+			tag <= 0;
 			cnt_key_in <=0;
 			cnt_en_out <= 0;
 			cnt_dec_out <= 0;

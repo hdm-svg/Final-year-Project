@@ -7,7 +7,7 @@ module tb_endec;
 	parameter b =6;
 	parameter A_l =112;
 	parameter text_l = 128;
-	parameter period = 10;
+	parameter period = 5;
 	parameter max = (k>=text_l && k>=A_l)? k: ((text_l>=A_l)? text_l:A_l);
 	
 	reg clk=0;
@@ -18,7 +18,7 @@ module tb_endec;
 	reg plaintext_SI;
 	reg encryption_s_SI;
 	reg decryption_s_SI;
-	reg [127:0] tag_in;
+	reg tag_in;
 	integer ctr =0;
 	reg [text_l-1:0] ciphertext, dec_plaintext;
 	reg [127:0] tag, dec_tag;
@@ -75,17 +75,17 @@ module tb_endec;
 	);
 	
 	//Generate clock 5ns
-	always #(period/2) clk = ~clk;
+	always #(period) clk = ~clk;
 	
 	task set_value;
-	input [max-1:0] i,key,nonce,ass,pt,tag;
+	input [max-1:0] i,key,nonce,ass,pt,tag_in_reg;
 	begin
 		@(posedge clk);
 		key_SI = key[k-1-i];
 		nonce_SI = nonce[127-i];
 		plaintext_SI = pt[text_l-1-i];
 		associated_SI = ass[A_l-1-i];
-		tag_in = tag[127-i];
+		tag_in = tag_in_reg[127-i];
 	end
 	endtask
 	
@@ -115,7 +115,7 @@ module tb_endec;
 		no=1;
 		ctr =0;
 		repeat(max) begin
-			set_value(ctr, KEY, NONCE, AD, PT,TAG);
+			set_value(ctr, KEY, NONCE, AD, PT, TAG);
 			ctr = ctr+1;
 		end
 		ctr =0;

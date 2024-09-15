@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../add_const.v" \
+"../../../../../decryption.v" \
+"../../../../../encryption.v" \
+"../../../../../linear_diffuse.v" \
+"../../../../../permutation.v" \
+"../../../../../process.v" \
+"../../../../../substituition.v" \
+"../../../../../tb_en.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
