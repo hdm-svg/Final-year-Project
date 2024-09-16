@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_endec_new_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_endec_new" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5616788fs"></ZoomStartTime>
+      <ZoomEndTime time="6294789fs"></ZoomEndTime>
+      <Cursor1Time time="6140000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="262"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wave_markers>
+      <marker time="6100000" label="" />
+      <marker time="6700000" label="" />
+      <marker time="5780000" label="" />
+      <marker time="6140000" label="" />
+      <marker time="5220000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_endec_new/dec_plaintext_SO" type="logic">
+      <obj_property name="ElementShortName">dec_plaintext_SO</obj_property>
+      <obj_property name="ObjectShortName">dec_plaintext_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/dectag_SO" type="logic">
+      <obj_property name="ElementShortName">dectag_SO</obj_property>
+      <obj_property name="ObjectShortName">dectag_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/de/permutation_r" type="logic">
+      <obj_property name="ElementShortName">permutation_r</obj_property>
+      <obj_property name="ObjectShortName">permutation_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/de/permutation_s" type="logic">
+      <obj_property name="ElementShortName">permutation_s</obj_property>
+      <obj_property name="ObjectShortName">permutation_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/de/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/dec_plaintext" type="array">
+      <obj_property name="ElementShortName">dec_plaintext[39:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_plaintext[39:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/key_SI" type="logic">
+      <obj_property name="ElementShortName">key_SI</obj_property>
+      <obj_property name="ObjectShortName">key_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/nonce_SI" type="logic">
+      <obj_property name="ElementShortName">nonce_SI</obj_property>
+      <obj_property name="ObjectShortName">nonce_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/associated_SI" type="logic">
+      <obj_property name="ElementShortName">associated_SI</obj_property>
+      <obj_property name="ObjectShortName">associated_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/plaintext_SI" type="logic">
+      <obj_property name="ElementShortName">plaintext_SI</obj_property>
+      <obj_property name="ObjectShortName">plaintext_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/encryption_s_SI" type="logic">
+      <obj_property name="ElementShortName">encryption_s_SI</obj_property>
+      <obj_property name="ObjectShortName">encryption_s_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/decryption_s_SI" type="logic">
+      <obj_property name="ElementShortName">decryption_s_SI</obj_property>
+      <obj_property name="ObjectShortName">decryption_s_SI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/ctr" type="array">
+      <obj_property name="ElementShortName">ctr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/S" type="array">
+      <obj_property name="ElementShortName">S[319:0]</obj_property>
+      <obj_property name="ObjectShortName">S[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/p/x0" type="array">
+      <obj_property name="ElementShortName">x0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/p/x1" type="array">
+      <obj_property name="ElementShortName">x1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/p/x2" type="array">
+      <obj_property name="ElementShortName">x2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/p/x3" type="array">
+      <obj_property name="ElementShortName">x3[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/p/x4" type="array">
+      <obj_property name="ElementShortName">x4[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x4[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/permutation_r" type="logic">
+      <obj_property name="ElementShortName">permutation_r</obj_property>
+      <obj_property name="ObjectShortName">permutation_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/en/permutation_s" type="logic">
+      <obj_property name="ElementShortName">permutation_s</obj_property>
+      <obj_property name="ObjectShortName">permutation_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/uut/pr/de/P_out" type="array">
+      <obj_property name="ElementShortName">P_out[319:0]</obj_property>
+      <obj_property name="ObjectShortName">P_out[319:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/ciphertext" type="array">
+      <obj_property name="ElementShortName">ciphertext[39:0]</obj_property>
+      <obj_property name="ObjectShortName">ciphertext[39:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/tag" type="array">
+      <obj_property name="ElementShortName">tag[127:0]</obj_property>
+      <obj_property name="ObjectShortName">tag[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/dec_tag" type="array">
+      <obj_property name="ElementShortName">dec_tag[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_tag[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/ciphertext_SO" type="logic">
+      <obj_property name="ElementShortName">ciphertext_SO</obj_property>
+      <obj_property name="ObjectShortName">ciphertext_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/tag_SO" type="logic">
+      <obj_property name="ElementShortName">tag_SO</obj_property>
+      <obj_property name="ObjectShortName">tag_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/encryption_r_SO" type="logic">
+      <obj_property name="ElementShortName">encryption_r_SO</obj_property>
+      <obj_property name="ObjectShortName">encryption_r_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/decryption_r_SO" type="logic">
+      <obj_property name="ElementShortName">decryption_r_SO</obj_property>
+      <obj_property name="ObjectShortName">decryption_r_SO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/msg_auth" type="logic">
+      <obj_property name="ElementShortName">msg_auth</obj_property>
+      <obj_property name="ObjectShortName">msg_auth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/time_check" type="array">
+      <obj_property name="ElementShortName">time_check[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_check[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/plot" type="array">
+      <obj_property name="ElementShortName">plot[31:0]</obj_property>
+      <obj_property name="ObjectShortName">plot[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/test_keys" type="array">
+      <obj_property name="ElementShortName">test_keys[0:2][127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_keys[0:2][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/test_nonce" type="array">
+      <obj_property name="ElementShortName">test_nonce[0:2][127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_nonce[0:2][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/test_AD" type="array">
+      <obj_property name="ElementShortName">test_AD[0:2][39:0]</obj_property>
+      <obj_property name="ObjectShortName">test_AD[0:2][39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/test_PT" type="array">
+      <obj_property name="ElementShortName">test_PT[0:2][39:0]</obj_property>
+      <obj_property name="ObjectShortName">test_PT[0:2][39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/r" type="array">
+      <obj_property name="ElementShortName">r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/A_l" type="array">
+      <obj_property name="ElementShortName">A_l[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_l[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/text_l" type="array">
+      <obj_property name="ElementShortName">text_l[31:0]</obj_property>
+      <obj_property name="ObjectShortName">text_l[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/period" type="array">
+      <obj_property name="ElementShortName">period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/max" type="array">
+      <obj_property name="ElementShortName">max[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_endec_new/plot" type="array">
+      <obj_property name="ElementShortName">plot[31:0]</obj_property>
+      <obj_property name="ObjectShortName">plot[31:0]</obj_property>
+   </wvobject>
+</wave_config>

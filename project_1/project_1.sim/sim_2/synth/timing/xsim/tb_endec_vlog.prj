@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_endec_time_synth.v" \
+"../../../../../../tb_endec.v" \
+
+# Do not sort compile order
+nosort

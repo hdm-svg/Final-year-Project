@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Start
+Key: 	000102030405060708090a0b0c0d0e0f
+Nonce: 	000102030405060708090a0b0c0d0e0f
+Associated: 	000102030405060708090a0b0c0d
+Plaintext: 	000102030405060708090a0b0c0d0e0f
+Done encryption in          63 clock cycles
+Ciphertext:	2e325340df7fd0bfd25bec2d8a596b44
+Tag:	526e4b15b4b3184a2fc1f7d160e4e972
+Done decryption in          61 clock cycles
+PT: 	000102030405060708090a0b0c0d0e0f
+Tag: 	526e4b15b4b3184a2fc1f7d160e4e972
+Authenticated: 	1
+$finish called at time : 5105 ns : File "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v" Line 165

@@ -1,0 +1,483 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 11 15:07:51 2024
+# Process ID: 20136
+# Current directory: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log ascon.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ascon.tcl
+# Log file: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.runs/synth_1/ascon.vds
+# Journal file: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ascon.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1104.422 ; gain = 0.000
+Command: synth_design -top ascon -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5848
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 1169.207 ; gain = 64.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ascon' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/ascon.v:2]
+	Parameter KEY_l bound to: 128 - type: integer 
+	Parameter RATE bound to: 64 - type: integer 
+	Parameter a bound to: 12 - type: integer 
+	Parameter b bound to: 6 - type: integer 
+	Parameter A_l bound to: 40 - type: integer 
+	Parameter text_l bound to: 40 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'processing' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/process.v:2]
+	Parameter KEY_l bound to: 128 - type: integer 
+	Parameter RATE bound to: 64 - type: integer 
+	Parameter a bound to: 12 - type: integer 
+	Parameter b bound to: 6 - type: integer 
+	Parameter A_l bound to: 40 - type: integer 
+	Parameter text_l bound to: 40 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'encryption' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/encryption.v:2]
+	Parameter KEY_l bound to: 128 - type: integer 
+	Parameter RATE bound to: 64 - type: integer 
+	Parameter a bound to: 12 - type: integer 
+	Parameter b bound to: 6 - type: integer 
+	Parameter A_l bound to: 40 - type: integer 
+	Parameter Pt_l bound to: 40 - type: integer 
+	Parameter c bound to: 256 - type: integer 
+	Parameter pad_A bound to: 25 - type: integer 
+	Parameter pad_A_length bound to: 66 - type: integer 
+	Parameter s bound to: 1 - type: integer 
+	Parameter pad_Pt bound to: 23 - type: integer 
+	Parameter pad_Pt_length bound to: 64 - type: integer 
+	Parameter t bound to: 1 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter INITIALIZE bound to: 1 - type: integer 
+	Parameter ASSOCIATED bound to: 2 - type: integer 
+	Parameter PROCESS_PT bound to: 3 - type: integer 
+	Parameter FINALIZE bound to: 4 - type: integer 
+	Parameter DONE bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'permutation' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/permutation.v:2]
+INFO: [Synth 8-6157] synthesizing module 'add_const' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:15]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'add_const' (1#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:2]
+INFO: [Synth 8-6157] synthesizing module 'substituition' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (2#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'substituition' (3#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v:2]
+INFO: [Synth 8-6157] synthesizing module 'linear_diffuse' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/linear_diffuse.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'linear_diffuse' (4#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/linear_diffuse.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'permutation' (5#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/permutation.v:2]
+INFO: [Synth 8-6157] synthesizing module 'round_ctr' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/round_ctr.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'round_ctr' (6#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/round_ctr.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'encryption' (7#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/encryption.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decryption' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/decryption.v:2]
+	Parameter KEY_l bound to: 128 - type: integer 
+	Parameter RATE bound to: 64 - type: integer 
+	Parameter a bound to: 12 - type: integer 
+	Parameter b bound to: 6 - type: integer 
+	Parameter A_l bound to: 40 - type: integer 
+	Parameter Ct_l bound to: 40 - type: integer 
+	Parameter c bound to: 256 - type: integer 
+	Parameter pad_A bound to: 25 - type: integer 
+	Parameter pad_A_length bound to: 66 - type: integer 
+	Parameter s bound to: 1 - type: integer 
+	Parameter pad_Ct bound to: 23 - type: integer 
+	Parameter pad_Ct_length bound to: 64 - type: integer 
+	Parameter t bound to: 1 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter INITIALIZE bound to: 1 - type: integer 
+	Parameter ASSOCIATED bound to: 2 - type: integer 
+	Parameter PROCESS_CT bound to: 3 - type: integer 
+	Parameter FINALIZE bound to: 4 - type: integer 
+	Parameter DONE bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decryption' (8#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/decryption.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'processing' (9#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/process.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ascon' (10#1) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/ascon.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 1231.461 ; gain = 127.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1249.391 ; gain = 144.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1249.391 ; gain = 144.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 1249.391 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1369.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1369.988 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:51 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:51 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'encryption'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'decryption'
+WARNING: [Synth 8-327] inferring latch for variable 'out_buf_reg' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v:10]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+              INITIALIZE |                           000010 |                              001
+              ASSOCIATED |                           000100 |                              010
+              PROCESS_PT |                           001000 |                              011
+                FINALIZE |                           010000 |                              100
+                    DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'encryption'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+              INITIALIZE |                           000010 |                              001
+              ASSOCIATED |                           000100 |                              010
+              PROCESS_CT |                           001000 |                              011
+                FINALIZE |                           010000 |                              100
+                    DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'decryption'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:01:03 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input    320 Bit         XORs := 6     
+	   2 Input    128 Bit         XORs := 2     
+	   2 Input     64 Bit         XORs := 29    
+	   3 Input     64 Bit         XORs := 10    
++---Registers : 
+	              320 Bit    Registers := 2     
+	              128 Bit    Registers := 5     
+	               64 Bit    Registers := 10    
+	               40 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input  320 Bit        Muxes := 6     
+	   6 Input  128 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 6     
+	   3 Input   64 Bit        Muxes := 2     
+	   6 Input   64 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 18    
+	  13 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:37 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|sbox        | out_buf                   | 32x5          | LUT            | 
+|permutation | ps/genblk1[0].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[2].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[3].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[4].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[5].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[6].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[7].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[8].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[9].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[10].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[11].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[12].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[13].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[14].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[15].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[16].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[17].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[18].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[19].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[20].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[21].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[22].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[23].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[24].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[25].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[26].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[27].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[28].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[29].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[30].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[31].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[32].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[33].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[34].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[35].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[36].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[37].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[38].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[39].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[40].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[41].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[42].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[43].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[44].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[45].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[46].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[47].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[48].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[49].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[50].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[51].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[52].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[53].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[54].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[55].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[56].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[57].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[58].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[59].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[60].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[61].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[62].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[63].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[0].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[1].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[2].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[3].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[4].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[5].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[6].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[7].sb/out_buf  | 32x5          | LUT            | 
+|permutation | ps/genblk1[10].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[11].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[12].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[13].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[14].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[15].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[16].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[17].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[18].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[19].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[20].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[21].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[22].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[23].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[24].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[25].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[26].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[27].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[28].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[29].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[30].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[31].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[32].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[33].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[34].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[35].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[36].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[37].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[38].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[39].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[40].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[41].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[42].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[43].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[44].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[45].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[46].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[47].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[48].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[49].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[50].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[51].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[52].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[53].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[54].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[55].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[56].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[57].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[58].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[59].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[60].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[61].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[62].sb/out_buf | 32x5          | LUT            | 
+|permutation | ps/genblk1[63].sb/out_buf | 32x5          | LUT            | 
++------------+---------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:48 . Memory (MB): peak = 1369.988 ; gain = 265.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:02 . Memory (MB): peak = 1438.711 ; gain = 334.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:02:06 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:02:12 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:02:12 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:02:13 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:02:13 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:02:13 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:02:13 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    67|
+|3     |LUT1   |     5|
+|4     |LUT2   |   293|
+|5     |LUT3   |   275|
+|6     |LUT4   |   902|
+|7     |LUT5   |   945|
+|8     |LUT6   |   836|
+|9     |MUXF7  |    36|
+|10    |MUXF8  |    16|
+|11    |FDRE   |  2254|
+|12    |FDSE   |     2|
+|13    |LD     |   128|
+|14    |IBUF   |     9|
+|15    |OBUF   |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:02:13 . Memory (MB): peak = 1439.770 ; gain = 335.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:59 . Memory (MB): peak = 1439.770 ; gain = 214.750
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:02:14 . Memory (MB): peak = 1439.770 ; gain = 335.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1451.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 247 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1451.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:02:52 . Memory (MB): peak = 1451.652 ; gain = 347.230
+INFO: [Common 17-1381] The checkpoint 'F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.runs/synth_1/ascon.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ascon_utilization_synth.rpt -pb ascon_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 11 15:11:25 2024...

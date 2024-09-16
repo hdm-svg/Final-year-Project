@@ -7,7 +7,7 @@ module tb_only_core;
 	parameter b= 6;
 	parameter A_l =112;
 	parameter text_l = 128;
-	parameter period = 10;
+	parameter period = 5;
 	//parameter max = (k>=text_l && k>=A_l)? k: ((text_l>=A_l)? text_l:A_l);
 	
 	reg clk=0;

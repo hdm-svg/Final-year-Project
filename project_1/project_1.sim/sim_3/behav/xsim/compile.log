@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_const
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/decryption.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decryption
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/encryption.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encryption
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/linear_diffuse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linear_diffuse
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/permutation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/round_ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module substituition
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_en.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_only_core

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/add_const.v,1725419810,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/decryption.v,,add_const,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/decryption.v,1724662120,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/encryption.v,,decryption,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/encryption.v,1724640357,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/linear_diffuse.v,,encryption,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/linear_diffuse.v,1725419843,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/permutation.v,,linear_diffuse,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/permutation.v,1723398403,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/process.v,,permutation,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/process.v,1724662122,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/round_ctr.v,,processing,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/project_1/project_1.sim/sim_3/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/round_ctr.v,1724126513,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v,,round_ctr,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/substituition.v,1723389088,verilog,,F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_en.v,,sbox;substituition,,,,,,,,
+F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_en.v,1725512528,verilog,,,,tb_only_core,,,,,,,,

@@ -1,0 +1,49 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/vitis2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 075b5aeebf98400ba9afa53b93637af7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_endec_func_synth xil_defaultlib.tb_endec xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:52]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:53]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:54]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:55]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:56]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'uut' [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/datn/project/tb_endec.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module xil_defaultlib.add_const_2
+Compiling module xil_defaultlib.permutation_0
+Compiling module xil_defaultlib.round_ctr_1
+Compiling module xil_defaultlib.decryption
+Compiling module xil_defaultlib.add_const
+Compiling module xil_defaultlib.linear_diffuse
+Compiling module xil_defaultlib.permutation
+Compiling module xil_defaultlib.round_ctr
+Compiling module xil_defaultlib.encryption
+Compiling module xil_defaultlib.processing
+Compiling module xil_defaultlib.ascon
+Compiling module xil_defaultlib.tb_endec
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_endec_func_synth
